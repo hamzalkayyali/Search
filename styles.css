@@ -1,9 +1,5 @@
 body {
-  background-color: #202124;
-}
-
-.text {
-  color: #bdc1c6;
+  background-color: white;
 }
 
 a {
@@ -13,6 +9,21 @@ a {
 a:hover {
   text-decoration: underline;
   color: #bdc1c6;
+}
+
+nav {
+  display: flex;
+  width: 1349px;
+  height: 48px;
+  padding: 6px;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav .ul .gmail, nav .ul .images, nav .ul .advanced {
+  padding-left: 15px;
+  color: black;
+  font-size: 14px;
+  font-family: arial, sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */
