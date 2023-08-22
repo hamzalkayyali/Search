@@ -1,0 +1,18 @@
+body {
+  background-color: #202124;
+}
+
+.text {
+  color: #bdc1c6;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #bdc1c6;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -4,7 +4,13 @@ $font-color: #bdc1c6;
 body{
     background-color:$background-color;
 }
-
-p{
+.text{
+    color:$font-color;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
     color:$font-color;
 }
