@@ -1,10 +1,11 @@
-$background-color:#202124;
-$font-color: #bdc1c6;
+$background-color:white;
+$font-color: #202124;
 $font-size: 14px;
 $font-family: arial,sans-serif;
 
 body{
-    background-color:white;
+    font-family: $font-family;
+    background-color: $background-color;
 }
 
 a{
@@ -12,22 +13,44 @@ a{
 }
 a:hover{
     text-decoration: underline;
-    color:$font-color;
 }
 
 nav{
     display:flex;
-    width: 1349px;
-    height:48px;
-    padding: 6px;
-    align-items: center;
     justify-content: flex-end;
-    .ul{
-        .gmail,.images,.advanced{
-            padding-left: 15px;
-            color:black;
+    height: 60px;
+    padding: 20px 10px;
+     ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+     }
+     li{
+        text-align: center;
+        padding: 14px 12px;
+        .small-text{
             font-size: $font-size;
-            font-family: $font-family;
+            color:$font-color;
         }
+        .menu-button{
+            width: 15px;
+            padding-top: .75px;
+            padding-left: 0px;
+        }
+        .profile-pic{
+            margin-top: 6px;
+            border-radius: 50%;
+            width:100%
+        }
+     }
+    .menu-bg{
+        width: 17.5px;
+        height: 17.5px;
+        border-radius: 50%;
+
     }
+    .menu-bg:hover{
+        background-color: rgba(100,100,100,0.1);
+        cursor: pointer;
+    }    
 }

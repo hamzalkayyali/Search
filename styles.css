@@ -1,4 +1,5 @@
 body {
+  font-family: arial, sans-serif;
   background-color: white;
 }
 
@@ -8,22 +9,45 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #bdc1c6;
 }
 
 nav {
   display: flex;
-  width: 1349px;
-  height: 48px;
-  padding: 6px;
-  align-items: center;
   justify-content: flex-end;
+  height: 60px;
+  padding: 20px 10px;
 }
-nav .ul .gmail, nav .ul .images, nav .ul .advanced {
-  padding-left: 15px;
-  color: black;
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+nav li {
+  text-align: center;
+  padding: 14px 12px;
+}
+nav li .small-text {
   font-size: 14px;
-  font-family: arial, sans-serif;
+  color: #202124;
+}
+nav li .menu-button {
+  width: 15px;
+  padding-top: 0.75px;
+  padding-left: 0px;
+}
+nav li .profile-pic {
+  margin-top: 6px;
+  border-radius: 50%;
+  width: 100%;
+}
+nav .menu-bg {
+  width: 17.5px;
+  height: 17.5px;
+  border-radius: 50%;
+}
+nav .menu-bg:hover {
+  background-color: rgba(100, 100, 100, 0.1);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
