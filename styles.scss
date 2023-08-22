@@ -1,11 +1,14 @@
 $background-color:#202124;
 $font-color: #bdc1c6;
-
+$font-size: 14px;
+$font-family: arial,sans-serif;
 body{
     background-color:$background-color;
 }
 .text{
     color:$font-color;
+    font-size: $font-size;
+    font-family: $font-family;
 }
 a{
     text-decoration: none;
@@ -13,4 +16,10 @@ a{
 a:hover{
     text-decoration: underline;
     color:$font-color;
+}
+#Upper-bar{
+    height: 60px;
+    width: 1349px;
+    padding: 6px;
+
 }
