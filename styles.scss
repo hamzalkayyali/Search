@@ -2,7 +2,9 @@ $background-color:white;
 $font-color: #202124;
 $font-size: 14px;
 $font-family: arial,sans-serif;
-
+*{
+    margin: 0px;
+}
 body{
     font-family: $font-family;
     background-color: $background-color;
@@ -53,4 +55,48 @@ nav{
         background-color: rgba(100,100,100,0.1);
         cursor: pointer;
     }    
+}
+
+#logo{
+    align-items: center;
+}
+.search-wrapper {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+footer{
+    width: 100%;
+    background-color: #f2f2f2;
+    .panel{
+        border-bottom: 1px solid #ddd;
+        height: 15px;
+        display: flex;
+        justify-content: space-between;
+        padding: 2.5px;
+        *{
+            flex-basis: 33%;
+        }
+        p{
+            color: grey;
+            padding-left: 13px;
+        }
+        .right {
+            justify-content: flex-end;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+         li{
+            text-align: center;
+            padding: 5px 12px;
+        }
+    }
 }

@@ -1,3 +1,7 @@
+* {
+  margin: 0px;
+}
+
 body {
   font-family: arial, sans-serif;
   background-color: white;
@@ -48,6 +52,48 @@ nav .menu-bg {
 nav .menu-bg:hover {
   background-color: rgba(100, 100, 100, 0.1);
   cursor: pointer;
+}
+
+#logo {
+  align-items: center;
+}
+
+.search-wrapper {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+footer .panel {
+  border-bottom: 1px solid #ddd;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5px;
+}
+footer .panel * {
+  flex-basis: 33%;
+}
+footer .panel p {
+  color: grey;
+  padding-left: 13px;
+}
+footer .panel .right {
+  justify-content: flex-end;
+}
+footer .panel ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+footer .panel li {
+  text-align: center;
+  padding: 5px 12px;
 }
 
 /*# sourceMappingURL=styles.css.map */
