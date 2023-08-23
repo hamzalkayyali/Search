@@ -3,12 +3,6 @@ $font-color: #202124;
 $font-size: 14px;
 $font-family: arial,sans-serif;
 
-
-body{
-    font-family: $font-family;
-    background-color: $background-color;
-}
-
 nav{
     display:flex;
     justify-content: flex-end;
@@ -25,6 +19,7 @@ nav{
         .small-text{
             font-size: $font-size;
             color:$font-color;
+            font-family: $font-family;
         }
         .menu-button{
             width: 15px;
@@ -58,6 +53,7 @@ nav{
 #logo{
     align-items: center;
 }
+
 .search-wrapper {
     height: 60vh;
     display: flex;
@@ -71,6 +67,7 @@ nav{
             height: 45px;
             padding-left: 50px;
             font-size: 1.2rem;
+            font-family: $font-family;
             border-radius: 45px;
             border: 1px solid #d3d3d3;
         }
@@ -102,6 +99,7 @@ nav{
             border-radius: 5px;
             a{
                 text-decoration: none;
+                font-family: $font-family;
                 color: $font-color;
             }
             a:hover{
@@ -120,43 +118,15 @@ nav{
             justify-content: center;
             a{
                 text-decoration: none;
+                font-family: $font-family;
             }
             a:hover{
                 text-decoration: underline;
             }
-        }
-    }
-
-}
-
-
-footer{
-    width: 100%;
-    background-color: #f2f2f2;
-    .panel{
-        border-bottom: 1px solid #ddd;
-        height: 15px;
-        display: flex;
-        justify-content: space-between;
-        padding: 2.5px;
-        *{
-            flex-basis: 33%;
-        }
-        p{
-            color: grey;
-            padding-left: 13px;
-        }
-        .right {
-            justify-content: flex-end;
-        }
-        ul{
-            display: flex;
-            list-style: none;
-            align-items: center;
-        }
-         li{
-            text-align: center;
-            padding: 5px;
+            p{
+                font-size: $font-size;
+                font-family: $font-family; 
+            }
         }
     }
 }

@@ -1,8 +1,3 @@
-body {
-  font-family: arial, sans-serif;
-  background-color: white;
-}
-
 nav {
   display: flex;
   justify-content: flex-end;
@@ -21,6 +16,7 @@ nav li {
 nav li .small-text {
   font-size: 14px;
   color: #202124;
+  font-family: arial, sans-serif;
 }
 nav li .menu-button {
   width: 15px;
@@ -67,6 +63,7 @@ nav .menu-bg:hover {
   height: 45px;
   padding-left: 50px;
   font-size: 1.2rem;
+  font-family: arial, sans-serif;
   border-radius: 45px;
   border: 1px solid #d3d3d3;
 }
@@ -98,6 +95,7 @@ nav .menu-bg:hover {
 }
 .search-wrapper form .button a {
   text-decoration: none;
+  font-family: arial, sans-serif;
   color: #202124;
 }
 .search-wrapper form .button a:hover {
@@ -115,40 +113,14 @@ nav .menu-bg:hover {
 }
 .search-wrapper form .lang-change a {
   text-decoration: none;
+  font-family: arial, sans-serif;
 }
 .search-wrapper form .lang-change a:hover {
   text-decoration: underline;
 }
-
-footer {
-  width: 100%;
-  background-color: #f2f2f2;
-}
-footer .panel {
-  border-bottom: 1px solid #ddd;
-  height: 15px;
-  display: flex;
-  justify-content: space-between;
-  padding: 2.5px;
-}
-footer .panel * {
-  flex-basis: 33%;
-}
-footer .panel p {
-  color: grey;
-  padding-left: 13px;
-}
-footer .panel .right {
-  justify-content: flex-end;
-}
-footer .panel ul {
-  display: flex;
-  list-style: none;
-  align-items: center;
-}
-footer .panel li {
-  text-align: center;
-  padding: 5px;
+.search-wrapper form .lang-change p {
+  font-size: 14px;
+  font-family: arial, sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */
