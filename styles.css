@@ -63,6 +63,7 @@ nav .profile-bg {
 }
 
 .search-wrapper {
+  margin-top: 45px;
   height: 60vh;
   display: flex;
   flex-direction: column;
@@ -143,11 +144,21 @@ footer {
   width: 100%;
   background-color: #f2f2f2;
 }
-footer .panel {
+footer .country {
+  display: flex;
+  align-content: center;
   border-bottom: 1px solid #ddd;
+  height: 17px;
+  padding: 15px 30px;
+  margin: 0px 0px;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #202124;
+}
+footer .panel {
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  height: 46px;
   padding: 0px 20px;
 }
 footer .panel ul {
@@ -157,10 +168,11 @@ footer .panel ul {
 }
 footer .panel ul li {
   text-align: center;
+  width: fit-content;
 }
 footer .panel ul li a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-family: arial, sans-serif;
   color: #202124;
 }
