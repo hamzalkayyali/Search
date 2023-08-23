@@ -2,7 +2,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   height: 60px;
-  padding: 20px 10px;
+  margin-top: 1.5px;
 }
 nav ul {
   display: flex;
@@ -42,6 +42,9 @@ nav .menu-bg {
 nav .menu-bg:hover {
   background-color: rgba(100, 100, 100, 0.1);
   cursor: pointer;
+}
+nav .profile-bg {
+  padding: 3px 3px;
 }
 
 #logo {
