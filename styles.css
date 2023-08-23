@@ -1,7 +1,12 @@
-body {
-  width: 100%;
-  height: 100vh;
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   margin: 0px 0px;
+}
+
+.site-content {
+  flex: 1;
 }
 
 nav {
