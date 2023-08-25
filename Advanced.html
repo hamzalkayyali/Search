@@ -6,8 +6,94 @@
     <title>Document</title>
 </head>
 <body class="site">
-    <header></header>
-    <main class="site-content"></main>
-    <footer></footer>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="Images/logo.png" alt="logo" class="home-page button"></a></li>
+            </ul>
+            <ul>
+                <li class="menu-bg"><img src="Images/menu.png" alt="menu pic" class="menu-button"></li>
+                <li class="profile-bg"><img src="Images/profile.png" alt="profile pic" class="profile-pic"></li>
+            </ul>
+        </nav>
+        <div>
+            <div><p>Advanced Search</p></div>
+        </div>
+    </header>
+    <main class="site-content">
+        <section>
+            <form action="https://www.google.com/advanced_search?as_q=q&as_epq=r&as_oq=s&as_eq=t">
+                <table class="text-input-table">
+                    <tr><td><h4>Find pages with...</h4></td></tr>	
+                    <tr>
+                        <td class="des1"> All of these words: </td>
+                        <td > <input name="as_q" type="text" class="searchbar form-control" > </td>
+                        <td class="ps-3 desc">Type the important words Eg: Sir Isaac Newton</td>
+                        <!-- all these words -->
+                    </tr>
+                    <tr>
+                        <!-- Exact irbeku andre as_epq -->
+                        <td class="des1">This exact word or phrase: </td>
+                        <td ><input name="as_epq" type="text" class="searchbar form-control"></td>
+                        <td class="ps-3 desc">Put exact words in quotes Eg: Isaac Newton</td>
+                    </tr>
+                    <tr>
+                        <!-- any of the words that we will give as input -->
+                        <td class="des1"> Any of these words: </td>
+                        <td> <input name="as_oq" type="text" class="searchbar form-control"> </td>
+                        <td class="ps-3 desc">Type OR between all the words you want: Eg: Newton OR Isaac</td>
+                    </tr>
+                    <tr>
+                        <!-- No these words andre thee parameter will be as_eq -->
+                        <td class="des1">None of these words: </td>
+                        <td><input name="as_eq" type="text" class="searchbar form-control"> </td>
+                        <td class="ps-3 desc">Eg: Albert Einstien</td>
+                    </tr>
+                    <tr>
+                        <td class="des1">Numbers ranging form: </td>
+                        <td><input name="as_epq" type="text" class="searchbar form-control"></td>
+                        <td>to</td>
+                        <td><input name="as_epq" type="text" class="searchbar form-control"></td>
+                        <td class="ps-3 desc">Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</td>
+                    </tr>
+                    <tr><td><h4>Then narrow your results by...</h4></td></tr>
+                    <tr>
+                        <td>language: </td>
+                        <td>
+                            <input name="language" list="languages" placeholder="any language">
+                            <datalist id="languages"></datalist>
+                            
+                        </td>
+                    </tr>
+                    
+                 </table>
+            </form>
+        </section>
+        <section>
+            <div>
+                <p>You can also...</p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="https://support.google.com/websearch/answer/2466433?visit_id=638285690156882819-2089038680&p=adv_pages_similar&hl=en&rd=1">Find pages that are similar to a URL</a></li>
+                    <li><a href="https://support.google.com/websearch/answer/54068?hl=en&visit_id=638285690156882819-2089038680&p=adv_pages_visited&rd=1">Search pages that you've visited</a></li>
+                    <li><a href="https://support.google.com/websearch/answer/2466433?visit_id=638285690156882819-2089038680&p=adv_operators&hl=en&rd=1">Use operators in the search box</a></li>
+                    <li><a href="https://www.google.com/preferences?hl=en-JO">Customise your search settings</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p class="country">Jordan</p>
+        </div>
+        <div class="panel">
+            <ul>
+                <li><a href="" class="text">Help</a></li>
+                <li><a href="" class="text">Privacy</a></li>
+                <li><a href="" class="text">Terms</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
