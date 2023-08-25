@@ -71,7 +71,7 @@ nav{
         position: relative;
         margin-top: 30px;
         .search-bar {
-            width: 580px;
+            width: 560px;
             height: 45px;
             padding-left: 50px;
             font-size: 1.2rem;
@@ -91,11 +91,18 @@ nav{
             top: 12px;
             left: 540px;
         }
-        .img-search{
-            width: 15px;
+        .img-button{
             position: absolute;
+
             top: 15px;
-            left: 15px;
+            left: 570px;
+            background-color: transparent;
+            border: none;
+            #img-search{
+                width: 20px;
+                height: 20px;
+                color:lightseagreen;
+            }
         }
         .buttons {
             width: 350px;

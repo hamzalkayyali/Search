@@ -71,7 +71,7 @@ nav .profile-bg {
   margin-top: 30px;
 }
 .search-wrapper form .search-bar {
-  width: 580px;
+  width: 560px;
   height: 45px;
   padding-left: 50px;
   font-size: 1.2rem;
@@ -91,11 +91,17 @@ nav .profile-bg {
   top: 12px;
   left: 540px;
 }
-.search-wrapper form .img-search {
-  width: 15px;
+.search-wrapper form .img-button {
   position: absolute;
   top: 15px;
-  left: 15px;
+  left: 570px;
+  background-color: transparent;
+  border: none;
+}
+.search-wrapper form .img-button #img-search {
+  width: 20px;
+  height: 20px;
+  color: lightseagreen;
 }
 .search-wrapper form .buttons {
   width: 350px;
