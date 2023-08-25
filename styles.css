@@ -59,10 +59,6 @@ nav .profile-bg {
   padding-left: 0px;
 }
 
-#logo {
-  align-items: center;
-}
-
 .search-wrapper {
   margin-top: 45px;
   height: 60vh;
@@ -75,7 +71,7 @@ nav .profile-bg {
   margin-top: 30px;
 }
 .search-wrapper form .search-bar {
-  width: 530px;
+  width: 580px;
   height: 45px;
   padding-left: 50px;
   font-size: 1.2rem;
@@ -94,6 +90,12 @@ nav .profile-bg {
   position: absolute;
   top: 12px;
   left: 540px;
+}
+.search-wrapper form .img-search {
+  width: 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 .search-wrapper form .buttons {
   width: 350px;
@@ -168,6 +170,7 @@ footer .panel ul {
   align-items: center;
 }
 footer .panel ul li {
+  display: flex;
   text-align: center;
   width: fit-content;
 }
