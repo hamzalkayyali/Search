@@ -2,372 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Advanced Search -Google</title>
+    <link rel="stylesheet" href="./css/advancedsearch.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
-        .table{
-            width: 100%;
+        .btn{
+            float: right;
+            margin-right: 50px;
+        }
+        .sbt{
+            background-color: #4a87ea;
+        }
+        .navy{
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-end;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 0;
+            padding-left: 0;
+            color: black;
+        }
+        .navy:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        .searchbar{
+            width: 400px;
+            margin: 8px ;
+        }
+        @media screen and (max-width:600px){
+            .desc{
+                visibility: hidden;
+            }
+            .des1{
+                width: 50px;
+            }
+            .searchbar{
+                width: 200px;
+                margin-left: 50px;
+            }
         }
     </style>
 </head>
-<body class="site">
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><img src="Images/logo.png" alt="logo" class="home-page button"></a></li>
-            </ul>
-            <ul>
-                <li class="menu-bg"><img src="Images/menu.png" alt="menu pic" class="menu-button"></li>
-                <li class="profile-bg"><img src="Images/profile.png" alt="profile pic" class="profile-pic"></li>
-            </ul>
-        </nav>
-        <div>
-            <div><p>Advanced Search</p></div>
-        </div>
-    </header>
-    <main class="site-content">
-        <section class="table">
-            <form action="https://www.google.com/advanced_search?as_q=q&as_epq=r&as_oq=s&as_eq=t">
-                <table class="text-input-table">
-                    <tr><td><h4>Find pages with...</h4></td></tr>	
-                    <tr>
-                        <td class="des1"> All of these words: </td>
-                        <td > <input name="as_q" type="text" class="searchbar form-control" > </td>
-                        <td class="ps-3 desc">Type the important words Eg: Sir Isaac Newton</td>
-                        <!-- all these words -->
-                    </tr>
-                    <tr>
-                        <!-- Exact irbeku andre as_epq -->
-                        <td class="des1">This exact word or phrase: </td>
-                        <td ><input name="as_epq" type="text" class="searchbar form-control"></td>
-                        <td class="ps-3 desc">Put exact words in quotes Eg: Isaac Newton</td>
-                    </tr>
-                    <tr>
-                        <!-- any of the words that we will give as input -->
-                        <td class="des1"> Any of these words: </td>
-                        <td> <input name="as_oq" type="text" class="searchbar form-control"> </td>
-                        <td class="ps-3 desc">Type OR between all the words you want: Eg: Newton OR Isaac</td>
-                    </tr>
-                    <tr>
-                        <!-- No these words andre thee parameter will be as_eq -->
-                        <td class="des1">None of these words: </td>
-                        <td><input name="as_eq" type="text" class="searchbar form-control"> </td>
-                        <td class="ps-3 desc">Eg: Albert Einstien</td>
-                    </tr>
-                    <tr>
-                        <td class="des1">Numbers ranging form: </td>
-                        <td><input name="as_epq" type="text" class="searchbar form-control"></td>
-                        <td>to</td>
-                        <td><input name="as_epq" type="text" class="searchbar form-control"></td>
-                        <td class="ps-3 desc">Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</td>
-                    </tr>
-                    <tr><td><h4>Then narrow your results by...</h4></td></tr>
-                    <tr>
-                        <td>language: </td>
-                        <td>
-                            <input name="language" list="languages" placeholder="any language">
-                            <datalist id="languages">
-                                <option value="Arabic">
-                                <option value="Bengali">
-                                <option value="English">
-                                <option value="Hindi">
-                                <option value="Japanese">
-                                <option value="Javanese">
-                                <option value="Mandarian Chinese">
-                                <option value="Portuguese">    
-                                <option value="Russian">
-                                <option value="Spanish">
-                                <option value="Western Punjabi">
-                            </datalist>
-                            
-                        </td>
-                        <td>Find pages in the language that you select.</td>
-                    </tr>
-                    <tr>
-                        <td>region: </td>
-                        <td>
-                            <input name="region" list="regions" placeholder="any region">
-                            <datalist id="regions">
-                                <option value="Afghanistan">
-                                    <option value="Albania">
-                                    <option value="Algeria">
-                                    <option value="Andorra">
-                                    <option value="Angola">
-                                    <option value="Antigua & Deps">
-                                    <option value="Argentina">
-                                    <option value="Armenia">
-                                    <option value="Australia">
-                                    <option value="Austria">
-                                    <option value="Azerbaijan">
-                                    <option value="Bahamas">
-                                    <option value="Bahrain">
-                                    <option value="Bangladesh">
-                                    <option value="Barbados">
-                                    <option value="Belarus">
-                                    <option value="Belgium">
-                                    <option value="Belize">
-                                    <option value="Benin">
-                                    <option value="Bhutan">
-                                    <option value="Bolivia">
-                                    <option value="Bosnia Herzegovina">
-                                    <option value="Botswana">
-                                    <option value="Brazil">
-                                    <option value="Brunei">
-                                    <option value="Bulgaria">
-                                    <option value="Burkina">
-                                    <option value="Burundi">
-                                    <option value="Cambodia">
-                                    <option value="Cameroon">
-                                    <option value="Canada">
-                                    <option value="Cape Verde">
-                                    <option value="Central African Rep">
-                                    <option value="Chad">
-                                    <option value="Chile">
-                                    <option value="China">
-                                    <option value="Colombia">
-                                    <option value="Comoros">
-                                    <option value="Congo">
-                                    <option value="Congo {Democratic Rep}">
-                                    <option value="Costa Rica">
-                                    <option value="Croatia">
-                                    <option value="Cuba">
-                                    <option value="Cyprus">
-                                    <option value="Czech Republic">
-                                    <option value="Denmark">
-                                    <option value="Djibouti">
-                                    <option value="Dominica">
-                                    <option value="Dominican Republic">
-                                    <option value="East Timor">
-                                    <option value="Ecuador">
-                                    <option value="Egypt">
-                                    <option value="El Salvador">
-                                    <option value="Equatorial Guinea">
-                                    <option value="Eritrea">
-                                    <option value="Estonia">
-                                    <option value="Ethiopia">
-                                    <option value="Fiji">
-                                    <option value="Finland">
-                                    <option value="France">
-                                    <option value="Gabon">
-                                    <option value="Gambia">
-                                    <option value="Georgia">
-                                    <option value="Germany">
-                                    <option value="Ghana">
-                                    <option value="Greece">
-                                    <option value="Grenada">
-                                    <option value="Guatemala">
-                                    <option value="Guinea">
-                                    <option value="Guinea-Bissau">
-                                    <option value="Guyana">
-                                    <option value="Haiti">
-                                    <option value="Honduras">
-                                    <option value="Hungary">
-                                    <option value="Iceland">
-                                    <option value="India">
-                                    <option value="Indonesia">
-                                    <option value="Iran">
-                                    <option value="Iraq">
-                                    <option value="Ireland {Republic}">
-                                    <option value="Israel">
-                                    <option value="Italy">
-                                    <option value="Ivory Coast">
-                                    <option value="Jamaica">
-                                    <option value="Japan">
-                                    <option value="Jordan">
-                                    <option value="Kazakhstan">
-                                    <option value="Kenya">
-                                    <option value="Kiribati">
-                                    <option value="Korea North">
-                                    <option value="Korea South">
-                                    <option value="Kosovo">
-                                    <option value="Kuwait">
-                                    <option value="Kyrgyzstan">
-                                    <option value="Laos">
-                                    <option value="Latvia">
-                                    <option value="Lebanon">
-                                    <option value="Lesotho">
-                                    <option value="Liberia">
-                                    <option value="Libya">
-                                    <option value="Liechtenstein">
-                                    <option value="Lithuania">
-                                    <option value="Luxembourg">
-                                    <option value="Macedonia">
-                                    <option value="Madagascar">
-                                    <option value="Malawi">
-                                    <option value="Malaysia">
-                                    <option value="Maldives">
-                                    <option value="Mali">
-                                    <option value="Malta">
-                                    <option value="Marshall Islands">
-                                    <option value="Mauritania">
-                                    <option value="Mauritius">
-                                    <option value="Mexico">
-                                    <option value="Micronesia">
-                                    <option value="Moldova">
-                                    <option value="Monaco">
-                                    <option value="Mongolia">
-                                    <option value="Montenegro">
-                                    <option value="Morocco">
-                                    <option value="Mozambique">
-                                    <option value="Myanmar, {Burma}">
-                                    <option value="Namibia">
-                                    <option value="Nauru">
-                                    <option value="Nepal">
-                                    <option value="Netherlands">
-                                    <option value="New Zealand">
-                                    <option value="Nicaragua">
-                                    <option value="Niger">
-                                    <option value="Nigeria">
-                                    <option value="Norway">
-                                    <option value="Oman">
-                                    <option value="Pakistan">
-                                    <option value="Palau">
-                                    <option value="Panama">
-                                    <option value="Papua New Guinea">
-                                    <option value="Paraguay">
-                                    <option value="Peru">
-                                    <option value="Philippines">
-                                    <option value="Poland">
-                                    <option value="Portugal">
-                                    <option value="Qatar">
-                                    <option value="Romania">
-                                    <option value="Russian Federation">
-                                    <option value="Rwanda">
-                                    <option value="St Kitts & Nevis">
-                                    <option value="St Lucia">
-                                    <option value="Saint Vincent & the Grenadines">
-                                    <option value="Samoa">
-                                    <option value="San Marino">
-                                    <option value="Sao Tome & Principe">
-                                    <option value="Saudi Arabia">
-                                    <option value="Senegal">
-                                    <option value="Serbia">
-                                    <option value="Seychelles">
-                                    <option value="Sierra Leone">
-                                    <option value="Singapore">
-                                    <option value="Slovakia">
-                                    <option value="Slovenia">
-                                    <option value="Solomon Islands">
-                                    <option value="Somalia">
-                                    <option value="South Africa">
-                                    <option value="South Sudan">
-                                    <option value="Spain">
-                                    <option value="Sri Lanka">
-                                    <option value="Sudan">
-                                    <option value="Suriname">
-                                    <option value="Swaziland">
-                                    <option value="Sweden">
-                                    <option value="Switzerland">
-                                    <option value="Syria">
-                                    <option value="Taiwan">
-                                    <option value="Tajikistan">
-                                    <option value="Tanzania">
-                                    <option value="Thailand">
-                                    <option value="Togo">
-                                    <option value="Tonga">
-                                    <option value="Trinidad & Tobago">
-                                    <option value="Tunisia">
-                                    <option value="Turkey">
-                                    <option value="Turkmenistan">
-                                    <option value="Tuvalu">
-                                    <option value="Uganda">
-                                    <option value="Ukraine">
-                                    <option value="United Arab Emirates">
-                                    <option value="United Kingdom">
-                                    <option value="United States">
-                                    <option value="Uruguay">
-                                    <option value="Uzbekistan">
-                                    <option value="Vanuatu">
-                                    <option value="Vatican City">
-                                    <option value="Venezuela">
-                                    <option value="Vietnam">
-                                    <option value="Yemen">
-                                    <option value="Zambia">
-                                    <option value="Zimbabwe">
-                            </datalist>
-                        </td>
-                        <td>Find pages published in a particular region.</td>
-                    </tr>
-                    <tr>
-                        <td>last update:</td>
-                        <td>
-                            <input name="last update" list="time" placeholder="any time">
-                            <datalist id="time">
-                                <option value="anytime"></option>
-                                <option value="past 24 hours"></option>
-                                <option value="past week"></option>
-                                <option value="past month"></option>
-                                <option value="past year"></option>
-                            </datalist>   
-                        </td>
-                        <td>Find pages updated within the time that you specify.</td>
-                    </tr>
-                    <tr>
-                        <td>site or domain: </td>
-                        <td><input type="text"></td>
-                        <td>Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</td>
-                    </tr>
-                    <tr>
-                        <td>terms appearing: </td>
-                        <td>
-                            <input name="term" list="terms" placeholder="anywhere in the page">
-                            <datalist id="terms">
-                                <option value="anywhere in the page"></option>
-                                <option value="in the title of the page"></option>
-                                <option value="in the text of the page"></option>
-                                <option value="in the URL of the page"></option>
-                                <option value="in link to the page"></option>
-                            </datalist>   
-                        </td>
-                        <td>Search for terms in the whole page, page title or web address, or links to the page you're looking for.</td>
-                    </tr> 
-                    <tr>
-                        <td>file type:</td>
-                        <td>
-                            <input name="type" list="types" placeholder="any format">
-                            <datalist id="types">
-                                
-                            </datalist>   
-                        </td>
-                        <td>Find pages in the format that you prefer.</td>
-                    </tr> 
-                    <tr>
-                        <td><a href="https://support.google.com/websearch/answer/29508?hl=en&visit_id=638287366396792425-3124202722&p=ws_images_usagerights&rd=1">usage rights: </a></td>
-                        <td>
-                            <input name="coypyright" list="copyrights" placeholder="not filtered by licence">
-                            <datalist id="copyrights"></datalist>   
-                        </td>
-                        <td>Find pages that you are free to use yourself.</td>
-                    </tr>
-                </table>
-                <button>Submit</button>
-            </form>
-        </section>
-        <section>
-            <div>
-                <p>You can also...</p>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="https://support.google.com/websearch/answer/2466433?visit_id=638285690156882819-2089038680&p=adv_pages_similar&hl=en&rd=1">Find pages that are similar to a URL</a></li>
-                    <li><a href="https://support.google.com/websearch/answer/54068?hl=en&visit_id=638285690156882819-2089038680&p=adv_pages_visited&rd=1">Search pages that you've visited</a></li>
-                    <li><a href="https://support.google.com/websearch/answer/2466433?visit_id=638285690156882819-2089038680&p=adv_operators&hl=en&rd=1">Use operators in the search box</a></li>
-                    <li><a href="https://www.google.com/preferences?hl=en-JO">Customise your search settings</a></li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <p class="country">Jordan</p>
-        </div>
-        <div class="panel">
-            <ul>
-                <li><a href="https://support.google.com/websearch/?visit_id=638287366398695384-3304602742&hl=en-JO&rd=2#topic=3378866" class="text">Help</a></li>
-                <li><a href="https://policies.google.com/privacy?hl=en-JO&fg=1" class="text">Privacy</a></li>
-                <li><a href="https://policies.google.com/terms?hl=en-JO&fg=1" class="text">Terms</a></li>
-            </ul>
-        </div>
-    </footer>
+<body>
+    <nav class=".navbar container-fluid align-right">
+       <a href="./index.html" class="navbar-brand navy">Google</a>
+    </nav>
+    <div class="m-3 p-2">
+    <h2 class="text-danger mt-1">Advanced Search</h2>
+    <hr/>
+    <form action="https://google.com/search">
+		
+        <table class="text-input-table">
+            <tr><td><h4>Find pages with...</h4></td></tr>	
+            <tr>
+                <td class="des1"> All of these words: </td>
+                <td > <input name="as_q" type="text" class="searchbar form-control" > </td>
+                <td class="ps-3 desc">Type the important words Eg: Sir Isaac Newton</td>
+                <!-- all these words -->
+            </tr>
+            <tr>
+                <!-- Exact irbeku andre as_epq -->
+                <td class="des1">This exact word or phrase: </td>
+                <td ><input name="as_epq" type="text" class="searchbar form-control"></td>
+                <td class="ps-3 desc">Put exact words in quotes Eg: Isaac Newton</td>
+            </tr>
+            <tr>
+                <!-- any of the words that we will give as input -->
+                <td class="des1"> Any of these words: </td>
+                <td> <input name="as_oq" type="text" class="searchbar form-control"> </td>
+                <td class="ps-3 desc">Type OR between all the words you want: Eg: Newton OR Isaac</td>
+            </tr>
+            <tr>
+                <td class="des1">This exact word or phrase: </td>
+                <td><input name="as_epq" type="text" class="searchbar form-control"></td>
+                <td class="ps-3 desc">Put a minus sign just before words that you don't want: Eg: Isaac</td>
+            </tr>
+            <tr>
+                <!-- No these words andre thee parameter will be as_eq -->
+                <td class="des1">None of these words: </td>
+                <td><input name="as_eq" type="text" class="searchbar form-control"> </td>
+                <td class="ps-3 desc">Eg: Albert Einstien</td>
+            </tr>
+            
+         </table>
+         <div class="container-fluid"><input type="submit" value="Advanced Search" class="btn btn-primary sbt"></div>
+        
+         <!-- <form action="https://www.google.com/advanced_search?as_q=q&as_epq=r&as_oq=s&as_eq=t"> -->
+
+    </form>
+</div>	
 </body>
 </html>
